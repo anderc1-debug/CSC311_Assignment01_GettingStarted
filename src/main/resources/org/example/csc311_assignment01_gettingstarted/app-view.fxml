@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<VBox alignment="CENTER"
+      spacing="20.0"
+      xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.example.csc311_assignment01_gettingstarted.AppController">
+
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onCalculateButtonClick"/>
+    <TextField fx:id="number1Field" promptText="Enter first number"/>
+    <TextField fx:id="number2Field" promptText="Enter second number"/>
+
+    <Button text="Calculate Sum" onAction="#onCalculateButtonClick"/>
+
+    <Label fx:id="welcomeText" text="Enter numbers and click Calculate"/>
+
 </VBox>
